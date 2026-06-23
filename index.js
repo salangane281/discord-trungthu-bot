@@ -86,8 +86,8 @@ client.on('interactionCreate', async interaction => {
 📦 Số lượng: ${soluong}
 📏 Đơn vị: ${donvi}
 💰 Giá tiền: ${giatien.toLocaleString()} đ
-👤 Người chi: ${nguoichi}`,
-      📸 Vui lòng upload ảnh hóa đơn/chứng từ ngay bên dưới tin nhắn này.`,
+👤 Người chi: ${nguoichi}
+📸 Vui lòng upload ảnh hóa đơn/chứng từ ngay bên dưới tin nhắn này.`,
     });
   }
 });
