@@ -87,7 +87,7 @@ client.on('interactionCreate', async interaction => {
 📏 Đơn vị: ${donvi}
 💰 Giá tiền: ${giatien.toLocaleString()} đ
 👤 Người chi: ${nguoichi}`,
-      ephemeral: true,
+      📸 Vui lòng upload ảnh hóa đơn/chứng từ ngay bên dưới tin nhắn này.`,
     });
   }
 });
