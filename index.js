@@ -5,6 +5,7 @@ const {
   Routes,
   SlashCommandBuilder,
 } = require('discord.js');
+const fetch = global.fetch;
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],
@@ -89,6 +90,23 @@ client.on('interactionCreate', async interaction => {
 👤 Người chi: ${nguoichi}
 📸 Vui lòng upload ảnh hóa đơn/chứng từ ngay bên dưới tin nhắn này.`,
     });
+    await fetch(
+  'http://n8n-zbeos5oumjfdy4pattr3i5cv.45.76.163.125.sslip.io/webhook/6e15bedf-5899-4851-a862-f6c2e6d81e02',
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      ngay: new Date().toLocaleDateString('vi-VN'),
+      noidung,
+      soluong,
+      donvi,
+      giatien,
+      nguoichi,
+    }),
+  }
+);
   }
 });
 
