@@ -91,7 +91,7 @@ client.on('interactionCreate', async interaction => {
 📸 Vui lòng upload ảnh hóa đơn/chứng từ ngay bên dưới tin nhắn này.`,
     });
     await fetch(
-  'http://n8n-zbeos5oumjfdy4pattr3i5cv:5678/webhook/6e15bedf-5899-4851-a862-f6c2e6d81e02',
+  'http://n8n-zbeos5oumjfdy4pattr3i5cv.45.76.163.125.sslip.io/webhook/507f5fa0-4cab-49fa-9fc4-00db6a1a6c32',
   {
     method: 'POST',
     headers: {
